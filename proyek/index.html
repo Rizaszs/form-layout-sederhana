@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My form </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<script src="script.js"></script>
+	<div class="container">
+		<div class="container-box">
+			<div class="left">
+				<div>
+					<div class="data-top">
+						<h1>Hello.</h1>
+						<h1 id="display_name">Suryawan</h1>
+						<p id="display_summary">
+							Lorem ipsum yang sampai sekarang digunakan ternyata berasal dari penggalan paragraf bagian 1.10.32 dan 1.10.33 dari naskah de Finibus Bonorum et Malorum (Sisi Ekstrem dari Kebaikan dan Kejahatan) sebuah karya dari filsuf pada masa romawi yang bernama Cicero.
+						</p>
+					</div>
+					<div class="data-bottom">
+						<div class="telephone">
+							<img src="assets/phone.png">
+							<span id="display_phone">085813095235</span>
+						</div>
+						<div class="email">
+							<img src="assets/mail.png">
+							<span id="display_email">rizalsuryawan86@gmail.com</span>
+						</div>
+						<div class="address">
+							<img src="assets/maps.png">
+							<span id="display_address">
+								Jl. Gandaria, Rawa waluh, Kec. Mekar Baru, Kabupaten Tangerang, Banten 15551
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				
+				<form class="Myform-style">
+					<h2>Input your data</h2>
+					<ul>
+						<li>
+							<label for="name">Name</label>
+							<input type="text" id="name" spellcheck="false">
+							<span>Enter your name here</span>
+						</li>
+						<li>
+							<label for="phone">Number</label> 
+							<input type="tel" id="phone" spellcheck="false">
+							<span>Enter your phone number here</span>
+						</li>
+						<li>
+							<label for="summary">Summary</label> 
+							<input type="text" id="summary"
+							spellcheck="false">
+							<span>Enter your summary here</span>
+						</li>
+						<li>
+							<label for="email">Email</label>
+							<input type="email" id="email" spellcheck="false">
+							<span>Enter your email here</span>
+						</li>
+						<li>
+							<label for="address">Address</label>
+							<textarea type="textarea" id="address" spellcheck="false"></textarea>
+							<span>Enter your address here</span>
+						</li>
+						<div class="Mybutton">
+							<button type="button" class="pushable" onclick="showData()">
+								<span class="front">
+									Submit
+								</span>
+							</button>
+						</div>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

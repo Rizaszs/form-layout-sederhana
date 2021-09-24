@@ -1,0 +1,233 @@
+/* menggunakan font dari google */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+
+/* digunakan untuk menghapus seluruh padding dan margin standar yang diberikan browser pada semua elemen */
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+
+	/* Menggunakan border-box dalam perhitungan dimensi box-nya */
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+/* pseudo-elemen merupakan sebuah elemen “semu” yang sebenarnya ada tetapi tidak tampak secara tertulis pada berkas HTML. */
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url("assets/bg.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(10px);
+	z-index: -1;
+}
+.container-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("assets/bg.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+/* display data  */
+
+
+.data-top{
+
+	align-items: center;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+  }
+
+  .data-top h1 {
+	  text-align: left;
+  }
+
+.data-top p {
+	margin-top: 20px;
+	height: 170px;
+}
+
+
+.data-bottom div {
+	display: flex;
+	height:40px;
+	align-items: center;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 35px;
+  }
+
+  .data-bottom img {
+	  max-height: 30px;
+	  max-width: 30px;
+  }
+
+  .data-bottom span {
+	text-align: left;
+	color: #FFFFFF;
+	text-shadow: 0 0 3px #424242;
+	font-size: 0.80em;
+	padding-left: 5px;
+  }
+
+/* form layout */
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+	color: #838383;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 80px;
+    border-radius: 2px;
+    background-color: #838383;
+}
+
+.Myform-style {
+	max-width: 400px;
+	margin: 0px auto;
+	background: #FFFFFF;
+	padding: 20px;
+	font-family: 'Quicksand', sans-serif;
+  }
+  
+  .Myform-style ul {
+	list-style: none;
+	padding: 10px;
+	margin: 0;
+  }
+  
+  .Myform-style li {
+	display: block;
+	padding: 9px;
+	border: 1px solid #DDDDDD;
+	margin-bottom: 10px;
+	border-radius: 3px;
+  }
+  
+  .Myform-style li>label {
+	display: block;
+	float: left;
+	margin-top: -20px;
+	background: #FFFFFF;
+	height: 20px;
+	padding: 2px 5px 2px 5px;
+	color: #B9B9B9;
+	font-size: 15px;
+	overflow: hidden;
+	font-family: 'Quicksand', sans-serif;
+  }
+  
+  .Myform-style input[type="text"],
+  .Myform-style input[type="email"],
+  .Myform-style input[type="tel"],
+  .Myform-style textarea,
+  .Myform-style select {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	color: #838383;
+	font-family: 'Quicksand', sans-serif;
+  }
+  
+  .Myform-style li>span {
+	background: #F3F3F3;
+	display: block;
+	padding: 3px;
+	margin: 0 -9px -9px -9px;
+	text-align: center;
+	color: #C0C0C0;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 11px;
+  }
+  
+  .Myform-style textarea {
+	resize: none;
+	height: 80px;
+	color: #838383;
+  }
+  
+  /* submit button */
+  
+  .Mybutton {
+	margin-top: 20px;
+	text-align: center;
+  }
+  
+  .pushable {
+	background: #F3F3F3;
+	border-radius: 12px;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline-offset: 4px;
+	text-align: center;
+  }
+  
+  .front {
+	display: block;
+	padding: 12px 42px;
+	border-radius: 12px;
+	font-size: 1.0Sem;
+	
+	background: #838383;
+	color: #FFFFFF;
+	transform: translateY(-6px);
+  }
+  
+  .pushable:active .front {
+	transform: translateY(-2px);
+  }
